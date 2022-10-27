@@ -1,16 +1,23 @@
-print("A1 to learn about A")
-print("B2 to learn about B")
-print("C3 to learn about C")
+print("\nYou're on your lunch break, which restaurant do you want to go to?")
+print("1. Potbelly")
+print("2. Chick-fil-A")
+print("3. Beggar's Pizza")
+print("4. McDonald's")
+print("5. Dunkin'")
+print("0. None (Exit the program)")
 
+number = int(input("\nNumber: "))
 
-A1 = input("Please input letter that corresponds with its number")
-if A1:
-    print("This is about the letter A being the first letter  in the alphabet")
-
-B2 = input("press B2 for more information")
-if B2:
-    print("This is about the letter B the second letter in the alphabet")
-
-C3 = input("Please input letter that corresponds with its number")
-if C3:
-    print("This is about the letter C its the third letter in the alphabet")
+if number == 1:
+    print("You went to eat at Potbelly!")
+if number == 2:
+    print("You went to eat at Chick-fil-A!")
+if number == 3:
+    print("You went to eat at Beggar's Pizza!")
+if number == 4:
+    print("You went to eat at McDonald's!")
+if number == 5:
+    print("You went to eat at Dunkin'!")
+if number == 0:
+    print("You did not eat at any of the places listed")
+    exit()
