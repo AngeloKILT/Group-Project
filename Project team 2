@@ -1,0 +1,12 @@
+import random
+import random as buns
+print("Welcome to the game")
+print("This game is about you choosing high and low")
+Number = int(input("Please enter a number between 1,30"))
+Numbers = buns.randrange(1,30)
+if Numbers == 1,30:
+    print("1,15 Low")
+elif Number:
+    print()
+else:
+    print(" High")
