@@ -1,12 +1,30 @@
-import random
-import random as buns
-print("Welcome to the game")
-print("This game is about you choosing high and low")
-Number = int(input("Please enter a number between 1,30"))
-Numbers = buns.randrange(1,30)
-if Numbers == 1,30:
-    print("1,15 Low")
-elif Number:
-    print()
-else:
-    print(" High")
+# Edward, Angelo
+# 11/12/22
+# Module 6: Team Assignment
+# Number guessing game with the option to guess another number
+
+import random as r
+
+
+def main():
+    num = r.randint(1, 25)
+    guess = 0
+
+    while guess != num:
+        guess = int(input("Guess a number between 1 and 25: "))
+        if guess < num:
+            print("\nChoose higher!\n")
+        elif guess > num:
+            print("\nChoose lower!\n")
+        else:
+            print("\nYou guessed correctly!\n")
+
+    repeat = input("Would you like to guess another number (Y/N)?\n")
+    if repeat == "Y":
+        main()
+    else:
+        print("Game has ended")
+        exit()
+
+
+main()
